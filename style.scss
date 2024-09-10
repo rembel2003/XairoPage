@@ -1,0 +1,120 @@
+$h: .125em;
+$r: .5*$h;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-section {
+    background-image: url(images/Image.png);
+    padding-top: 64px;
+    min-height: 904px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 37px;
+    &__contant{
+        position: relative
+    }
+
+}
+.nav-menu{
+    margin-bottom: 285px;
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    &__item{
+        position: relative;
+        margin-right: 60px;
+        a{
+            text-decoration: none;
+            color: white;
+            margin-right: 3px;
+            font-family: Oswald;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400 ;
+
+        }
+        &:last-child{
+              margin-right: 0px
+          }
+    }
+    &__underline{
+        margin: 0;
+        border-bottom: 2px solid #4CAF50;
+        width: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+}
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 285px;
+    color: white;
+    &__main-text{
+        font-family: Oswald;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 500 ;
+        margin-bottom: 25px;
+    }
+    &__second-text{
+        font-family: OpenSans;
+        margin: 0;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        opacity: 0.5;
+    }
+}
+.numbers-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    gap: 10px;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700 ;
+    &__first{
+        position: relative;
+        z-index: 1;
+    }
+    &__second{
+        position: relative;
+        z-index: 3;
+    }
+}
+.active-link{
+    width: 60px;
+}
+.active-page{
+    font-size: 36px;
+    color: white;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #4CAF50;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+}
+
+
+
+
